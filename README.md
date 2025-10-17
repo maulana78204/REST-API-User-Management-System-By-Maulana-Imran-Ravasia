@@ -217,9 +217,6 @@ docker run -p 10000:10000 user-management-api
 4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open Pull Request
 
-## License
-Distributed under the MIT License. See `LICENSE` for more information.
-
 ## Tampilan Swagger UI
 
 <img width="940" height="415" alt="image" src="https://github.com/user-attachments/assets/0ccef4af-c1f6-42a1-88f9-3ead403fc4ac" />
@@ -338,6 +335,12 @@ Endpoint: DELETE /admin/users {id}
 <img width="814" height="88" alt="image" src="https://github.com/user-attachments/assets/1f55aba8-a6dd-4a63-bbc5-86ce03511d34" />
 
 <img width="494" height="122" alt="image" src="https://github.com/user-attachments/assets/c99be9fa-99be-46eb-a336-9e250ca104d9" />
+
+
+
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
+
 
 
  
