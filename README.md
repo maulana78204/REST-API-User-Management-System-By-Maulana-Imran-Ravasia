@@ -1,4 +1,5 @@
 # User Management System
+[![Maven CI](https://github.com/maulana78204/REST-API-User-Management-System-By-Maulana-Imran-Ravasia/actions/workflows/maven.yml/badge.svg)](https://github.com/maulana78204/REST-API-User-Management-System-By-Maulana-Imran-Ravasia/actions/workflows/maven.yml)
 
 REST API untuk sistem manajemen user dengan autentikasi berbasis Keycloak/JWT, dibuat menggunakan Java Spring Boot dan PostgreSQL.
 
