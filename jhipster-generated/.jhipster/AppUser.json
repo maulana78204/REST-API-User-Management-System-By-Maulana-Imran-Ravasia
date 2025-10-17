@@ -1,0 +1,60 @@
+{
+  "annotations": {
+    "changelogDate": "20251015073436"
+  },
+  "applications": [
+    "usermanagement"
+  ],
+  "fields": [
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "unique",
+        "minlength",
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "191",
+      "fieldValidateRulesMinlength": "5"
+    },
+    {
+      "fieldName": "password",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required",
+        "minlength"
+      ],
+      "fieldValidateRulesMinlength": "8"
+    },
+    {
+      "fieldName": "role",
+      "fieldType": "RoleEnum",
+      "fieldValidateRules": [
+        "required"
+      ],
+      "fieldValues": "CUSTOMER,MITRA,ADMIN"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "StatusEnum",
+      "fieldValidateRules": [
+        "required"
+      ],
+      "fieldValues": "ACTIVE,INACTIVE"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "updatedAt",
+      "fieldType": "Instant"
+    }
+  ],
+  "name": "AppUser",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: user_management_postgres
+    environment:
+      POSTGRES_DB: user_management
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - user_management_network
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:18.0.2
+    container_name: user_management_keycloak
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+      KC_DB: postgres
+      KC_DB_URL: jdbc:postgresql://postgres:5432/user_management
+      KC_DB_USERNAME: postgres
+      KC_DB_PASSWORD: postgres
+    ports:
+      - "8081:8080"
+    command: start-dev
+    depends_on:
+      - postgres
+    networks:
+      - user_management_network
+
+  app:
+    build: .
+    container_name: user_management_app
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/user_management
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgres
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      KEYCLOAK_AUTH_SERVER_URL: http://keycloak:8080/auth
+    depends_on:
+      - postgres
+      - keycloak
+    networks:
+      - user_management_network
+
+volumes:
+  postgres_data:
+
+networks:
+  user_management_network:
+    driver: bridge

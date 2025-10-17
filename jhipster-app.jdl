@@ -1,0 +1,50 @@
+application {
+  config {
+    baseName usermanagement
+    applicationType monolith
+    packageName com.example.usermanagement
+    prodDatabaseType postgresql
+    devDatabaseType postgresql
+    buildTool maven
+    authenticationType oauth2
+    enableSwaggerCodegen true
+    enableHibernateCache false
+    serviceDiscoveryType no
+    clientFramework angularX
+    skipClient true
+    skipUserManagement true
+    jhiPrefix jhi
+  }
+  entities *
+}
+
+enum RoleEnum { CUSTOMER, MITRA, ADMIN }
+
+enum StatusEnum { ACTIVE, INACTIVE }
+
+entity AppUser {
+  email String required unique minlength(5) maxlength(191)
+  password String required minlength(8)
+  role RoleEnum required
+  status StatusEnum required
+  createdAt Instant
+  updatedAt Instant
+}
+
+entity UserProfile {
+  fullName String required minlength(2) maxlength(100)
+  phone String required minlength(10) maxlength(15)
+  address String required minlength(10) maxlength(255)
+  avatar String
+}
+
+relationship OneToOne {
+  UserProfile{user(email)} to AppUser
+}
+
+paginate AppUser with pagination
+paginate UserProfile with pagination
+
+service all with serviceClass
+
+// springDoc block is not supported by generator-jhipster v7 JDL parser; using defaults

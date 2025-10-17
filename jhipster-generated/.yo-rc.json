@@ -1,0 +1,29 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "oauth2",
+    "baseName": "usermanagement",
+    "buildTool": "maven",
+    "clientFramework": "angularX",
+    "creationTimestamp": 1760514307106,
+    "devDatabaseType": "postgresql",
+    "enableHibernateCache": false,
+    "enableSwaggerCodegen": true,
+    "entities": [
+      "AppUser",
+      "UserProfile"
+    ],
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "8.11.0",
+    "languages": [
+      "en"
+    ],
+    "lastLiquibaseTimestamp": 1760513736000,
+    "nativeLanguage": "en",
+    "packageName": "com.example.usermanagement",
+    "prodDatabaseType": "postgresql",
+    "serviceDiscoveryType": "no",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
