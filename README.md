@@ -219,3 +219,148 @@ docker run -p 10000:10000 user-management-api
 
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
+
+
+## Dokumentasi Swagger UI
+
+	Registrasi & login user dengan autentikasi berbasis JWT dengan Integrasi Keycloak
+
+
+○	Endpoint: POST /auth/keycloack/register
+
+<img width="846" height="444" alt="image" src="https://github.com/user-attachments/assets/96e00a2d-6596-435e-bb51-957e4e66b09a" />
+
+
+ 
+
+
+○	Endpoint: POST /auth/keycloack/login
+
+ 
+
+
+	Authentication & Authorization
+
+
+
+○	Endpoint: POST /auth/register
+
+ 
+
+ 
+
+
+
+○	Endpoint: POST /auth/login
+
+ 
+
+ 
+
+
+
+○	Endpoint: POST /auth/refresh
+
+ 
+
+ 
+
+
+
+○	Endpoint: POST /auth/logout
+
+ 
+
+ 
+
+
+	Profile Management (User)
+
+
+○	Endpoint: GET /profiles/me
+
+ 
+
+ 
+
+
+
+○	Endpoint: PUT /profiles/me
+
+ 
+
+
+ 
+
+
+
+○	Endpoint: DELETE /profiles/me
+
+ 
+
+
+ 
+
+
+
+
+	Profile Management (Admin Only)
+
+
+
+
+○	Endpoint: GET /admin/users/{id}
+
+ 
+
+ 
+
+
+
+○	Endpoint: PUT /admin/users/{id}/status
+
+
+ 
+
+
+ 
+
+
+
+○	Endpoint: PUT /admin/users/{id}
+ 
+
+
+ 
+
+
+
+
+○	Endpoint: GET /admin/users
+
+
+ 
+
+
+ 
+
+
+
+
+Endpoint: DELETE /admin/users {id}
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
