@@ -220,6 +220,14 @@ docker run -p 10000:10000 user-management-api
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
 
+## Tampilan Swagger UI
+
+<img width="940" height="415" alt="image" src="https://github.com/user-attachments/assets/0ccef4af-c1f6-42a1-88f9-3ead403fc4ac" />
+
+<img width="940" height="464" alt="image" src="https://github.com/user-attachments/assets/a1498d05-584a-4e2f-9e55-42233ccbe3c0" />
+
+
+
 
 ## Dokumentasi Swagger UI
 
@@ -307,32 +315,29 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ○	Endpoint: PUT /admin/users/{id}/status
 
-<img width="780" height="245" alt="image" src="https://github.com/user-attachments/assets/95b642d6-e88d-4935-859c-e28e03d4d6e0" />
+<img width="733" height="162" alt="image" src="https://github.com/user-attachments/assets/2b3f23b0-0716-4ec6-baa9-fe551ade4ac4" />
 
-<img width="508" height="233" alt="image" src="https://github.com/user-attachments/assets/21b768c4-e785-4824-ad3a-190e849976fb" />
+<img width="469" height="220" alt="image" src="https://github.com/user-attachments/assets/5b3bc107-37c5-44b0-89d7-575ce7cb5454" />
 
 ○	Endpoint: PUT /admin/users/{id}
 
-<img width="798" height="80" alt="image" src="https://github.com/user-attachments/assets/aa43da1a-d1cf-40c0-86e9-e1ecee384398" />
+<img width="780" height="245" alt="image" src="https://github.com/user-attachments/assets/fe501f72-b522-4790-8b84-a0f1bc8d9496" />
 
-<img width="789" height="417" alt="image" src="https://github.com/user-attachments/assets/9cfd105d-0f7d-4303-835a-e0cbc77b3ddd" />
+<img width="508" height="233" alt="image" src="https://github.com/user-attachments/assets/1158e0e0-7da4-49df-9860-80fec2fbdcf0" />
 
 
 ○	Endpoint: GET /admin/users
 
-<img width="814" height="88" alt="image" src="https://github.com/user-attachments/assets/7a4af96e-3ba8-46a7-8818-0bc2e2f1263e" />
+<img width="798" height="80" alt="image" src="https://github.com/user-attachments/assets/fbf52424-f50f-43e9-8d76-859668a1db8f" />
 
-<img width="494" height="122" alt="image" src="https://github.com/user-attachments/assets/9c4b94d6-451e-49fb-9f60-5d6ae8948466" />
-
- 
-
-
- 
-
-
+<img width="789" height="417" alt="image" src="https://github.com/user-attachments/assets/28c29cee-773e-44ee-89ff-db4a18cdff27" />
 
 
 Endpoint: DELETE /admin/users {id}
+
+<img width="814" height="88" alt="image" src="https://github.com/user-attachments/assets/1f55aba8-a6dd-4a63-bbc5-86ce03511d34" />
+
+<img width="494" height="122" alt="image" src="https://github.com/user-attachments/assets/c99be9fa-99be-46eb-a336-9e250ca104d9" />
 
 
  
